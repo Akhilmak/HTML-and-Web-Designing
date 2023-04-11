@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Site Under Construction</title>
+    <style>
+      body {
+  background-image: url("ji.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  
+}
+    .ji{
+text-align: center;
+font-size: 180%;
+color: rgb(84, 87, 148);
+border-radius: 99%;
+background-color: aqua;
+    }
+    .bi{
+      text-align: center;
+      font-size: 180%;
+      color: rgb(186, 167, 120);
+      background-color: antiquewhite;
+      border-radius: 90%;
+    }
+    .ni{
+      text-align: center;
+      font-size: 180%;
+      color: rgb(127, 193, 255);
+      background-color: blueviolet;
+      border-radius: 90%;
+    }
+    .ju{
+      text-align: center;
+      font-size: 180%;
+      color: beige;
+      background: blueviolet;
+    }
+
+    </style>
+</head>
+<body>
+  <script>
+    
+    
+       
+    var count=0;
+         
+        function funt()
+         {
+             count++;
+             document.getElementById('clicks').innerHTML=+count;
+         }
+         var hour=00;
+var min=00;
+var sec=000;
+function sleep(ms) {
+ return new Promise(resolve => setTimeout(resolve, ms));
+}
+async function mad()
+{
+while (true)
+{
+   sec++;
+   await sleep(1000);
+   document.getElementById('proctor').innerHTML=+sec;
+  
+}
+}
+mad()
+     
+         
+     </script>
+
+<h1 class="ji">Site Under Construction</h1>
+<form action="proctor.php" method="post">
+<p class="bi">We apologize for the inconvenience, but this site is currently under construction. Please check back soon for updates.</p>
+<p class="ni">click here to go back menu page 👉👉👉><button class="ju" onclick="http://localhost/test/final/mn2.php">Go Back</button>
+</p>
+<textarea name="proctor" id="proctor" hidden ></textarea>
+<textarea name="clicks" id="clicks" hidden></textarea>
+</form>
+</body>
+</html>
